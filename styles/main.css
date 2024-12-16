@@ -1,9 +1,10 @@
 :root {
   --primary-color: #000000;
   --secondary-color: rgb(40, 40, 40);
-  --tertiary-color: #656565;
+  --tertiary-color: #444444;
   --accent-color: #c6ff54;
   --text-color: #ffffff;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -17,10 +18,54 @@ body {
   height: 100vh;
 }
 
-.SocialContainer {
+.User {
   background-color: var(--secondary-color);
   padding: 2rem;
   border-radius: 0.5rem;
   width: 80%;
   max-width: 270px;
+}
+
+.User__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.User__header > img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.User__header > h1 {
+  font-size: 1.5rem;
+}
+
+.User__header > address {
+  color: var(--accent-color);
+  font-style: normal;
+  font-size: 0.85rem;
+}
+
+.User__list {
+  padding: 0;
+  list-style:none;
+  margin: 0;
+  margin-top: 0.5rem;
+  display: grid;
+  grid-template-columns: 100%;
+  row-gap: 1rem;
+}
+
+.User__list__item {
+  display: block;
+  width: calc(100% - 1.5rem);
+  padding: 0.75rem;
+  text-decoration: none;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--tertiary-color);
+  color: var(--text-color);
+  border-radius: 0.5rem;
 }
