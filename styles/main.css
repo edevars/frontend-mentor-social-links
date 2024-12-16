@@ -1,0 +1,26 @@
+:root {
+  --primary-color: #000000;
+  --secondary-color: rgb(40, 40, 40);
+  --tertiary-color: #656565;
+  --accent-color: #c6ff54;
+  --text-color: #ffffff;
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.SocialContainer {
+  background-color: var(--secondary-color);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  width: 80%;
+  max-width: 270px;
+}
